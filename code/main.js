@@ -4,6 +4,7 @@ const canvas = document.querySelector("#canvas");
 const pen = canvas.getContext("2d");
 const maxStars = 30;
 
+// paragrafo para poder exibir informações na tela
 const debug = document.querySelector("#debug");
 function putDebug(text) {
     const p = document.createElement('p');
@@ -14,6 +15,7 @@ function clearDebug() {
     debug.innerHTML = '';
 }
 
+// funções de gerenciamento de estrelas
 let myStars = [];
 function createStar() {
     if(myStars.length < maxStars) {
@@ -30,6 +32,7 @@ function starManage() {
     })
 }
 
+// função main
 function start() {
     clearDebug();
 
